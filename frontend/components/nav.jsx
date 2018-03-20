@@ -1,6 +1,5 @@
 import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
-import SwipeableViews from 'react-swipeable-views';
 
 const styles = {
   headline: {
@@ -35,27 +34,11 @@ class Nav extends React.Component {
     return (
       <div>
         <Tabs onChange={this.handleChange} value={this.state.slideIndex}>
-          <Tab label="One" value={0} />
-          <Tab label="Two" value={1} />
-          <Tab label="Three" value={2} />
-          <Tab label="Four" value={3} />
+          <Tab label="Home" onClick={() => { this.props.history.push('home')}} />
+          <Tab label="Trivia" onClick={() => { this.props.history.push('trivia')}} />
+          <Tab label="Random" onClick={() => { this.props.history.push('random')}} />
+          <Tab label="History" onClick={() => { this.props.history.push('history')}} />
         </Tabs>
-
-        <SwipeableViews index={this.state.slideIndex} onChangeIndex={this.handleChange}>
-          <div>
-            <h2 style={styles.headline}>Tabs with slide effect</h2>
-            Swipe to see the next slide.<br />
-          </div>
-          <div style={styles.slide}>
-            slide n°2
-          </div>
-          <div style={styles.slide}>
-            slide n°3
-          </div>
-          <div style={styles.slide}>
-            slide n°4
-          </div>
-        </SwipeableViews>
       </div>
     );
   }

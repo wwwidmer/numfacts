@@ -34,10 +34,10 @@ class Nav extends React.Component {
     return (
       <div>
         <Tabs onChange={this.handleChange} value={this.state.slideIndex}>
-          <Tab label="Home" onClick={() => { this.props.history.push('')}} />
-          <Tab label="Trivia" onClick={() => { this.props.history.push('trivia')}} />
-          <Tab label="Random" onClick={() => { this.props.history.push('random')}} />
-          <Tab label="History" onClick={() => { this.props.history.push('history')}} />
+          <Tab label="Home" onClick={ () => { this.props.history.push('/home') } }/>
+          <Tab label="Trivia" onClick={ () => { this.props.history.push('/trivia') } }/>
+          <Tab label="Random" onClick={ () => { this.props.history.push('/random') } }/>
+          <Tab label="History" onClick={ () => { this.props.history.push('/history') } }/>
         </Tabs>
       </div>
     );

@@ -1,21 +1,19 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Nav from './nav';
-import Home from './home';
-import History from './history';
-import Trivia from './trivia';
-import Random from './random';
+import { Link, HashRouter, Switch, Route } from 'react-router-dom';
+import NavContainer from './nav_container';
+import HomeContainer from './home_container';
+import HistoryContainer from './history_container';
+import TriviaContainer from './trivia_container';
+import RandomContainer from './random_container';
 
 const App = () => (
-  <div>
-    <Nav />
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/history" component={History} />
-      <Route path="/trivia" component={Trivia} />
-      <Route path="/random" component={Random} />
-    </Switch>
-  </div>
+    <div>
+      <Route path="/" component={NavContainer}/>
+      <Route path="/home" component={HomeContainer} />
+      <Route path="/history" component={HistoryContainer} />
+      <Route path="/trivia" component={TriviaContainer} />
+      <Route path="/random" component={RandomContainer} />
+    </div>
 );
 
 export default App;

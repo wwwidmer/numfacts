@@ -4,14 +4,14 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 import { Provider } from 'react-redux';
+import { HashRouter } from 'react-router-dom';
 import App from './app';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 const Root = ({ store }) => (
   <Provider store={store}>
-    <BrowserRouter>
-      <MuiThemeProvider><App/></MuiThemeProvider>
-    </BrowserRouter>
+      <MuiThemeProvider>
+          <HashRouter><App/></HashRouter>
+      </MuiThemeProvider>
   </Provider>
 );
 

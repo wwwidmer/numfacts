@@ -6,7 +6,7 @@ This app will, at a minimum, satisfy the following criteria with smooth, bug-fre
 
 - [ ] Production README
 - [ ] feature URLs
-- [ ] main navagation component
+- [ ] main navigation component
 - [ ] multi-browser support
 
 ## Design Docs

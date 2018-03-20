@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 import { saveSearch } from '../actions/history_actions';
-import Nav from './nav';
+import History from './history';
 
-const mapStateToProps = (search) => ({
+const mapStateToProps = ({search}) => ({
   search: search
 })
 
@@ -13,4 +13,4 @@ const mapDispatchToProps = (dispatch) => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Nav)
+)(History)

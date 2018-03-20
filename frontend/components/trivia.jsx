@@ -1,4 +1,5 @@
 import React from 'react';
+import {Card, CardHeader, CardText} from 'material-ui/Card';
 
 class trivia extends React.Component {
   constructor(props) {
@@ -7,9 +8,12 @@ class trivia extends React.Component {
 
   render() {
     return (
-      <div>
-        this is trivia
-      </div>
+      <Card>
+        <CardHeader title="Number One!" />
+        <CardText>
+          
+        </CardText>
+      </Card>
     );
   }
 }

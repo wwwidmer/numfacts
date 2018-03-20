@@ -5,6 +5,10 @@ class History extends React.Component {
     super(props);
   }
 
+  componentDidMount() {
+    console.log(this.props);
+  }
+
   render() {
     return (
       <div>

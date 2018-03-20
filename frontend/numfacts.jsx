@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import "babel-polyfill";
+import Root from './components/root';
 
 document.addEventListener('DOMContentLoaded', (e) => {
   e.preventDefault();
-  ReactDOM.render(<div>You're in React</div>, document.getElementById('root'));
+  ReactDOM.render(<Root />, document.getElementById('root'));
 })

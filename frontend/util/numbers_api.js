@@ -5,8 +5,8 @@ export const fetchData = (number, type, ctx) => {
     ctx.setState({
       data: data
     })
+    ctx.props.saveSearch([data]);
   });
-
 }
 
 export const fetchRandomData = (ctx) => {
@@ -18,6 +18,7 @@ export const fetchRandomData = (ctx) => {
       number: number,
       data: data
     })
+    ctx.props.saveSearch([data]);
   });
 
 }

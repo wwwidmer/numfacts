@@ -7,8 +7,8 @@ class Random extends React.Component {
     super(props);
 
     this.state = {
-      number: 2,
-      data : '2 is the price in cents per acre the USA bought Alaska from Russia.'
+      number: 5,
+      data : '5 is the number of Korotkoff sounds when measuring blood pressure.'
     }
   }
 

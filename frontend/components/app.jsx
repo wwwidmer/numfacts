@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Nav from './nav';
 import Home from './home';
 import History from './history';
@@ -9,13 +9,12 @@ import Random from './random';
 const App = () => (
   <div>
     <Nav />
-
-    <div>
-      <Route path="/home" component={Home} />
+    <Switch>
+      <Route path="/" component={Home} />
       <Route path="/history" component={History} />
       <Route path="/trivia" component={Trivia} />
       <Route path="/random" component={Random} />
-    </div>
+    </Switch>
   </div>
 );
 

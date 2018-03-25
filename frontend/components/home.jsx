@@ -1,6 +1,8 @@
 import React from 'react';
 import {Card, CardHeader, CardText} from 'material-ui/Card';
 
+// This is a stateless component, and could be simplified to just a function
+// const Home = ({ ...props }) => <Card> ... </Card>
 class Home extends React.Component {
   constructor(props) {
     super(props);

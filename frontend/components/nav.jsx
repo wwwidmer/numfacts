@@ -44,4 +44,9 @@ class Nav extends React.Component {
   }
 }
 
+/*
+* browser.js:49 Warning: Hash history cannot PUSH the same path; a new entry will not be added to the history stack
+* (You might be able to use <Link> as a child of Tab instead of onClick to remove the above error)
+*/
+
 export default Nav;

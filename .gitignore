@@ -17,7 +17,7 @@
 .byebug_history
 
 node_modules/
-bundle.js
+bundle.js <!-- bundles were in the repo.
 bundle.js.map
 .DS_Store
 npm-debug.log

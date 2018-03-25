@@ -6,11 +6,22 @@
     <link rel="icon" type="image/gif/png" href="https://upload.wikimedia.org/wikipedia/commons/a/a2/Ruter_logo_%28number_sign%29.png">
 
     <title>Numfacts</title>
+    <!--
+          Its standard to minimize inclusion of a script in the Head tag because
+          it slows down the page load.
+
+    -->
     <script src="bundle.js"></script>
+    <!--
+      You didn't need to load all of jQuery just for the ajax method.
+      The fetch API is available in all modern browsers.
+      (for 100% support XMLHttpRequest works)
+    -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   </head>
   <body>
+    <!-- React.Render removes this text instantly, use <noscript> for when javascript is disabled </noscript> -->
     <div id="root">
       Numfacts is a web application that allows users to explore some facts about numbers with an interface that keeps the user engaging.
     </div>

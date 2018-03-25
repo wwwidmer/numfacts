@@ -7,6 +7,8 @@ const mapStateToProps = ({search}) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
+  // I think defining this function to dispatch this action creator
+  // could have be placed somewhere else and imported. Its used in every connected component 
   saveSearch: (search) => dispatch(saveSearch(search))
 })
 

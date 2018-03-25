@@ -13,6 +13,9 @@ class History extends React.Component {
 
   componentDidMount() {
     this.setState({
+      // This is an unnecessary step, we can just use this.props in render, no?
+      // With this, the message placed in the constructor never actually shows because
+      // even if there is no search history its just going to undefined.
       data: this.props.search.search
     });
   }

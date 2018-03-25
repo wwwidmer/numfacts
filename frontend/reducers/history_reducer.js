@@ -10,6 +10,9 @@ const historyReducer = (state = {}, action) => {
       return merge({}, {search: action.search});
     } else {
       let combine = state.search;
+      // action.search is always an array of size 1, did it have to be an array?
+      // You were probably aiming ahead for random/{N} -
+      // you could have used concat instead of picking one array index
       combine.push(action.search[0]);
       return merge({}, {search: combine});
     }

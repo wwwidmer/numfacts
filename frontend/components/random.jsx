@@ -13,6 +13,7 @@ class Random extends React.Component {
   }
 
   componentDidMount() {
+    // Never actually see facts for 5 because this method updates the state on mount
     fetchRandomData(this);
   }
 
